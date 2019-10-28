@@ -22,3 +22,14 @@ export const ADD_POST = 'ADD_POST';
 export const GET_POST = 'GET_POST';
 export const ADD_COMMENT = 'ADD_COMMENT';
 export const REMOVE_COMMENT = 'REMOVE_COMMENT';
+//SOCKET IO
+// count reducer
+export const INCREMENT_COUNTER = 'INCREMENT_COUNTER'
+
+// chat reducer
+export const SEND_MESSAGE = 'SEND_MESSAGE'
+export const ADD_MESSAGE = 'ADD_MESSAGE'
+
+// socket reducer
+export const OPEN_WEBSOCKET = 'OPEN_WEBSOCKET'
+export const UPDATE_SOCKET_OBJECT = 'UPDATE_SOCKET_OBJECT'

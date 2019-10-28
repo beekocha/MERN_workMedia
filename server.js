@@ -3,12 +3,12 @@ const connectDB = require('./config/db.js')
 const path = require('path');
 const app = express();
 
-
 //Connecting to our database cloud
 connectDB();
 
 //Init MiddleWare
 app.use(express.json({ extended: false }));
+
 
 
 //Define ports
@@ -30,3 +30,4 @@ if(process.env.NODE_ENV === 'production'){
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=> console.log(`Something is working on ${PORT}`));
+

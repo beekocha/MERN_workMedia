@@ -43,8 +43,8 @@ router.post(
       const avatar = gravatar.url(email, {
         s: '200',
         r: 'pg',
-        d: 'mm'
-      });
+        d: 'retro'
+      }); //r - rating
 
       user = new User({
         name,
