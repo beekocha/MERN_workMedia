@@ -1,8 +1,8 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
+  --primary-color: #6cbe8c;
   --dark-color: #343a40;
-  --light-color: #f4f4f4;
+  --light-color: #fafafa;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -226,7 +226,6 @@ img {
 
 /* Overlay */
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -308,8 +307,8 @@ button {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
+  background: rgb(0, 0, 0);
 }
 
 .navbar ul {

@@ -1,7 +1,7 @@
 # MERN webApp
 Link to project: https://stark-forest-62333.herokuapp.com/
 
-DevConnector - is a social media for developers. 
+webApp - is a simple social media for workers and other users. 
 This project shows my current web-development knowledge. 
 <hr/>
 <h3>How to start</h3>
