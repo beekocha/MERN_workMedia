@@ -1,4 +1,4 @@
-# MERN DevConnector
+# MERN webApp
 Link to project: https://stark-forest-62333.herokuapp.com/
 
 DevConnector - is a social media for developers. 
