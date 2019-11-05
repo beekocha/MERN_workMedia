@@ -21,18 +21,10 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         default: Date.now()
     },
-    //creating a friend-list
-    friendsList: [{
-
-        friendId: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'user'
-            },
-        friendName: {
-            type: String, 
-            default: ''
-        }
-    }]
+    friends: {
+        type: Array
+    }
+    
 })
 
 module.exports = User = mongoose.model('user', UserSchema)

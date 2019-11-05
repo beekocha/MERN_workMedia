@@ -2,7 +2,9 @@ const express = require('express');
 const connectDB = require('./config/db.js')
 const path = require('path');
 const app = express();
-
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
+const { sendMessages } = require('./socket/chat')
 //Connecting to our database cloud
 connectDB();
 
@@ -16,8 +18,13 @@ app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/posts', require('./routes/api/posts'));
 app.use('/api/profile', require('./routes/api/profile'));
+// app.use('/api/chat', require('./routes/api/chat'))
 
-//Serve static assets in production
+// io.on('connection', socket => {
+//     socket.on('send message', data => sendMessages(io, data))
+//   })
+
+// // //Serve static assets in production
 if(process.env.NODE_ENV === 'production'){
     //Set static folder
     app.use(express.static('client/build'));
@@ -29,5 +36,5 @@ if(process.env.NODE_ENV === 'production'){
 
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, ()=> console.log(`Something is working on ${PORT}`));
+server.listen(PORT, ()=> console.log(`Something is working on ${PORT}`));
 

@@ -14,9 +14,11 @@ import Posts from '../posts/Posts';
 import Post from '../post/Post';
 import NotFound from '../layout/NotFound';
 import PrivateRoute from '../routing/PrivateRoute';
-
+import Navbar from '../layout/Navbar'
 const Routes = () => {
   return (
+    <section>
+    <Navbar />
     <section className='container'>
       <Alert />
       <Switch>
@@ -33,6 +35,7 @@ const Routes = () => {
         <PrivateRoute exact path='/posts/:id' component={Post} />
         <Route component={NotFound} />
       </Switch>
+    </section>
     </section>
   );
 };

@@ -11,21 +11,25 @@ const Landing = ({ isAuthenticated }) => {
   return (
     <section className='landing'>
       <div className='dark-overlay'>
-        <div className='landing-inner'>
-          <h1 className='x-large'>Social webApp application</h1>
+        <div className='landing-inner box-wrap'>
+          <h1 className='x-large'>WorkMedia</h1>
           <p className='lead'>
             Create a  profile/portfolio, share posts and get help from
             other users. Just have a fun!
           </p>
-          <div className='buttons'>
+          </div>
+          <div className='buttons btn-wrp'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up
             </Link>
             <Link to='/login' className='btn btn-light'>
               Login
             </Link>
+            <Link to='/profiles' className='btn btn-light'>
+              Users
+            </Link>
           </div>
-        </div>
+       
       </div>
     </section>
   );

@@ -3,6 +3,7 @@ import alert from './alert';
 import auth from './auth';
 import profile from './profile';
 import post from './post';
+
 /*Вспомогательная функция combineReducers преобразует объект, 
 значениями которого являются различные функции редюсеры,
 в одну функцию редюсер, которую можно передать в метод createStore.
@@ -17,6 +18,7 @@ export default combineReducers(
         alert,
         auth,
         profile,
-        post
+        post,
+        
     }
 );

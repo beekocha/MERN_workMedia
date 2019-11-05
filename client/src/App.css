@@ -1,4 +1,9 @@
 /* Global Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 :root {
   --primary-color: #6cbe8c;
   --dark-color: #343a40;
@@ -13,11 +18,11 @@
   padding: 0;
 }
 
+
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
   color: #333;
 }
 
@@ -46,7 +51,7 @@ img {
 
 /* Text Styles*/
 .x-large {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -329,6 +334,10 @@ button {
   margin-right: 0.6rem;
 }
 
+.title {
+  font-family: 'Staatliches', cursive;
+}
+
 /* Landing Page */
 .landing {
   position: relative;
@@ -337,7 +346,7 @@ button {
 }
 
 .landing-inner {
-  color: #fff;
+  color: rgb(255, 255, 255);
   height: 100%;
   width: 80%;
   margin: auto;
@@ -351,7 +360,7 @@ button {
 /* Profiles Page */
 .profile {
   display: grid;
-  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-columns: 2fr 3fr;
   align-items: center;
   grid-gap: 2rem;
   padding: 1rem;
@@ -367,7 +376,7 @@ button {
     'about about'
     'exp edu'
     'github github';
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 }
 
 .profile-top {
@@ -487,6 +496,76 @@ button {
   margin-bottom: 0.5rem;
 }
 
+/* for landing box */
+.box-wrap {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 50%;
+  border-width: 10px;
+  border: 10px;
+  border-color: rgb(82, 128, 37);
+  font-family: 'Lalezar', cursive;
+}
+/* buttons wrap */
+.btn-wrp {
+  display: flex;
+  padding: 10px;
+  height: 30%;
+  width: 35%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
+}
+
+/* chat */
+
+.roboto { font-family: 'Roboto', sans-serif; }
+
+[type="text"] {
+  margin-bottom: 2em;
+  width: 60%;
+  height: 3em;
+  border: 0.2px solid #ccc;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+[type="text"]:focus { border: 1.5px solid var(--main-color); }
+
+[type="submit"] {
+  margin-bottom: 2em;
+  width: 60%;
+  height: 3em;
+  border: none;
+  background: var(--main-color);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) inset,
+              -1px -1px 1px  rgba(0, 0, 0, 0.3) inset;
+}
+
+[type="submit"]:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3) inset,
+              -2px -2px 2px  rgba(0, 0, 0, 0.3) inset;
+}
+
+.message-list {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+.user {
+  font-weight: bold;
+}
+
+.message { margin-bottom: 1em; }
 /* Mobile Styles */
 @media (max-width: 700px) {
   .container {
@@ -573,4 +652,7 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+
+  /* chat */
+  
 }
